@@ -1,0 +1,61 @@
+1) Login
+    - users enters email and password
+
+2) users clicks on account icon 
+    - navigate to API Token tab 
+    - Test Case 2.1
+        - select read 
+        - enter name of token and click on "Create" button
+    - Test Case 2.2
+        - select payments 
+        - enter name of token and click on "Create" button
+    - Test Case 2.3
+        - select admin 
+        - enter name of token and click on "Create" button
+    - Test Case 2.4
+        - select trade
+        - enter name of token and click on "Create" button
+    - Test Case 2.5
+        - select trading information 
+        - enter name of token and click on "Create" button
+
+3) users selects more than 1 scope  of accessible
+    - Test Case 3.1
+        - select read & payments
+        - enter name of token and click on "Create" button
+    Test Case 3.2
+        - select admin, trade, & trading information
+        - enter name of token and click on "Create" button
+    Test Case 3.3
+        -  select read, payments, admin & trade
+        - enter name of token and click on "Create" button
+    Test Case 3.4
+        - selects all the access scope
+        - enter name of token and click on "Create" button
+
+4) users enters duplicate token name
+    - Test Case 4.1
+        - select read 
+        - enter name of token "testtoken" (already existing) and click on "Create" button
+
+5) users enter token name with special characters and numbers or both
+    - Test Case 5.1 (special characters)
+        - select read 
+        - enter name of token "token$#" and click on "Create" button
+    - Test Case 5.2 (numbers only)
+        - select read 
+        - enter name of token "4523452345" and click on "Create" button
+    - Test Case 5.3 (numbers and letters)
+        - select read 
+        - enter name of token "sfsadf234567" and click on "Create" button
+    - Test Case 5.4 (special characters & numbers)
+        - select read 
+        - enter name of token "%$#234" and click on "Create" button
+
+6) User enters more than 32 characters for token name
+
+6) User clicks on "Copy this Token" icon
+
+7) User clicks on "Show this Token" icon 
+
+8) User clicks on "Delete this Token" icon
