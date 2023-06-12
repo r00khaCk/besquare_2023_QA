@@ -159,6 +159,6 @@ Check Swap Charge
     ${expected_swap}=    Evaluate    int(100*100000*10*0.5)
     ${int_var}=    Set Variable    ${expected_swap}
     ${string_var}=    Evaluate    "{:,}".format($int_var)
-    # Element Text Should Be    //*[text()="USD"]//preceding-sibling::div    ${expected_swap}
+    Element Text Should Be    //*[text()="USD"]//preceding-sibling::div    ${string_var}
     Log To Console    ${string_var}
-    Should Be Equal As Strings    ${string_var}    //*[text()="50,000,000"]
+    # Should Be Equal As Strings    ${string_var}    //*[text()="50,000,000"]
