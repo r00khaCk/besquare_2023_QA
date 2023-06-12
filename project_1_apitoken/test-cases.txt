@@ -19,7 +19,7 @@
         - select trading information 
         - enter name of token and click on "Create" button
 
-3) users selects more than 1 scope  of accessible
+3) users selects more than 1 scope  of access
     - Test Case 3.1
         - select read & payments
         - enter name of token and click on "Create" button
@@ -54,8 +54,8 @@
 
 6) User enters more than 32 characters for token name
 
-6) User clicks on "Copy this Token" icon
+7) User clicks on "Copy this Token" icon
 
-7) User clicks on "Show this Token" icon 
+8) User clicks on "Show this Token" icon 
 
-8) User clicks on "Delete this Token" icon
+9) User clicks on "Delete this Token" icon
