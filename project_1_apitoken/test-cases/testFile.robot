@@ -2,7 +2,7 @@
 Documentation       single test to access API Token
 
 Library             SeleniumLibrary
-Resource            ../common-keywords/keywords.robot
+Resource            ../common-keywords/keywords-variables.robot
 
 
 *** Variables ***
@@ -40,7 +40,7 @@ ${copy_confirmation_button}         //*[@id="modal_root"]/div/div/div[2]/button
 
 
 *** Test Cases ***
-# TEST CASE 2
+# TEST CASE 2: users clicks on account icon and navigates to API Token tab
 TestCase 2.1: SelectReadAccess
     Log in to account
     Access to API Token Page
@@ -50,7 +50,6 @@ TestCase 2.1: SelectReadAccess
     Input Text    ${token_name}    testReadToken
     Wait Until Element Is Enabled    ${create_button}    10
     Click Element    ${create_button}
-    # Sleep    10
     Close Browser
 
 Test Case 2.2: SelectPaymentsAccess
@@ -97,7 +96,7 @@ Test Case 2.5: SelectTradingInformationAccess
     Click Element    ${create_button}
     Close Browser
 
-# TEST CASE 3: users selects more than 1 scope    of access
+# TEST CASE 3: users selects more than 1 scope of access
 
 TestCase 3.1: SelectReadPaymentsAccess
     Log in to account
@@ -230,12 +229,9 @@ TestCase 6.1: Scroll to token testAdminToken and click on "Delete this token" ic
     Wait Until Element Is Visible    ${read_checkbox}    15
     Scroll Element Into View    ${admin_token}
     Click Element    ${delete_icon}
-    # Sleep    10
-    # add popup
     Wait Until Element Is Visible    ${delete_message_box}    15
     Wait Until Element Is Enabled    ${delete_confirmation_button}    10
     Click Element    ${delete_confirmation_button}
-    # Wait Until Element Does Not Contain    ${table_row}    testAdminToken
     Close Browser
 
 TestCase 6.2: Scroll to token testTradeToken and click on "Show this token" icon
@@ -243,10 +239,7 @@ TestCase 6.2: Scroll to token testTradeToken and click on "Show this token" icon
     Access to API Token Page
     Wait Until Element Is Visible    ${read_checkbox}    15
     Scroll Element Into View    ${trade_token}
-    # Wait Until Element Is Visible    ${show_icon}    10
     Click Element    ${show_icon}
-    Sleep    10
-    # Wait Until Element Does Not Contain    ${table_row}    testAdminToken
     Close Browser
 
 TestCase 6.3: Scroll to token testAdminTradeTradeInfoToken and click on "Copy this token" icon
@@ -254,11 +247,8 @@ TestCase 6.3: Scroll to token testAdminTradeTradeInfoToken and click on "Copy th
     Access to API Token Page
     Wait Until Element Is Visible    ${read_checkbox}    15
     Scroll Element Into View    ${adminTradeTradeInfo_token}
-    # Wait Until Element Is Visible    ${show_icon}    10
     Click Element    ${copy_icon}
     Wait Until Element Is Visible    ${copy_message_box}    15
     Wait Until Element Is Enabled    ${copy_confirmation_button}    10
     Click Element    ${copy_confirmation_button}
-    Sleep    10
-    # Wait Until Element Does Not Contain    ${table_row}    testAdminToken
     Close Browser
