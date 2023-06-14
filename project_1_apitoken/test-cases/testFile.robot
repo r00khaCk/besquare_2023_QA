@@ -240,6 +240,7 @@ TestCase 6.2: Scroll to token testTradeToken and click on "Show this token" icon
     Wait Until Element Is Visible    ${read_checkbox}    15
     Scroll Element Into View    ${trade_token}
     Click Element    ${show_icon}
+    Wait Until Element Contains    //p[text()="6vyRhYTRRRCrKXd"]    6vyRhYTRRRCrKXd
     Close Browser
 
 TestCase 6.3: Scroll to token testAdminTradeTradeInfoToken and click on "Copy this token" icon

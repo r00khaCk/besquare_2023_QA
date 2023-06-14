@@ -1,0 +1,53 @@
+1) Login
+    - users enters email and password
+
+2) User navigate to "Close your account" tab
+    - Test Case 2.1
+        - user clicks on the "Account" icon
+        - User clicks on "Close your account" tab
+
+3) User clicks on "Security and privacy policy" hyperlink
+
+4) User clicks on "Close my acocunt"
+    - Test Case 4.1:
+        - User selects 1 reason 
+        - User enters text in "Other Trading Platforms" text box
+        - User enters text in "Do to Improve" text box
+        - User enters "Continue" button
+
+    - Test Case 4.2:
+        - User selects 2 reason 
+        - User enters text in "Other Trading Platforms" text box
+        - User enters text in "Do to Improve" text box
+        - User enters "Continue" button
+
+    - Test Case 4.3:
+        - User selects 3 reason 
+        - User enters text in "Other Trading Platforms" text box
+        - User enters text in "Do to Improve" text box
+        - User enters "Continue" button
+
+    - Test Case 4.4:
+        - User selects no reasons
+        - User enters no text in "Other Trading Platforms" text box
+        - User enters no text in "Do to Improve" text box
+        - User enters "Continue" button
+        - Verify that "Please select at least one reason" prompt is shown
+
+
+5) User clicks on the "Back" button
+
+
+6) Verify that account is closed
+    - User logs in with email that belongs to closed account
+    - Prompt that ask users if they want to reactivate the account is shown
+
+7) Reactivate the closed account
+
+
+
+
+
+
+///////////////////
+wait until page contains [text]
